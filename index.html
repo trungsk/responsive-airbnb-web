@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/um d/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/release/v5.0.4/css/all.css" rel="stylesheet">
+    <title>Airbnb</title>
+    <link rel="icon" type="image/x-icon" href="img/airbnb.jpg">
+</head>
+
+<body>
+    <nav id ="navbar" class="navbar navbar-expand-md  navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="padding-top: 1em; color: whitesmoke;">
+                <p>BRAND</p>
+            </a>
+            <a class="navbar-brand" href="#" style="padding-top: 1em; color: whitesmoke;">
+                <p>BROWSE</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">SIGNUP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HELP</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <!-- thumbnail -->
+    <div class="carousel" data-ride="carousel" data-interval="3000">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+
+        </ul>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <img src="img/lodging.png" alt="tris">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Find a place to stay</h1>
+                    <h3>Rent from people in over 34,000 cities and 192 countries</h3>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- main pics -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="col-12" style="padding-left: 12%;">
+            <h2>Neighborhood Guides</h2>
+            <p>Not sure where to stay? We've created neighborhood guides for city all around the world</p>
+        </div>
+
+
+
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="row1">
+                    <div class="content">
+                        <img src="img/paris.png" alt="pas">
+                    </div>
+                    <div class="content">
+                        <img src="img/tokyo.png" alt="pas">
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <div class="content">
+                        <img src="img/mexico-city.png" alt="pas">
+                    </div>
+                    <div class="content">
+                        <img src="img/ny.png" alt="pas">
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="content">
+                        <img src="img/invite.png" alt="pas">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-left">
+                <div class="col-lg-4 col-md-12">
+
+                    <h3><b>Travel</b></h3>
+                    <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries</p>
+                    <p><a href="#">See how to travel on Airbnb</a></p>
+                </div>
+                <div class="col-lg-4 col-md-12">
+
+                    <h3><b>Host</b></h3>
+                    <p>Renting out your unused space could pay your bills or fund your next vacation</p>
+                    <p><a href="#">Learn more about hosting</a></p>
+                </div>
+                <div class="col-lg-4 col-md-12">
+
+                    <h3><b>Trust and Safety</b></h3>
+                    <p>From Verified ID to our worldwide customer support team, we've got you back</p>
+                    <p><a href="#">Learn more about trust at Airbnb</a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
